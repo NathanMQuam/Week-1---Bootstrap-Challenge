@@ -18,17 +18,58 @@
    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-   <nav class="fixed-top container-fluid bg-primary">
+<body class="bg-light text-dark">
+   <nav class="sticky-top container-fluid bg-primary text-light">
       <div class="row">
-         <div class="col-10 offset-1 d-flex align-items-center">
+         <div class="col d-flex align-items-center">
             <i class="ra ra-wyvern ra-5x p-2" aria-hidden="true"></i>
             <h1>Lorem Ipsum</h1>
          </div>
       </div>
    </nav>
-   <main>
-      
+   <main class="container-fluid">
+      <!-- Form Row -->
+      <div class="row p-4">
+         <div class="col col-md-4">
+            <p>Subtle Heading</p>
+            <form class="card shadow p-3">
+               <legend>Less Subtle Heading</legend>
+            </form>
+         </div>
+         <div class="col d-none d-md-block"> Lorsum Iprem</div>
+      </div>
+      <!-- Overflow Card Row -->
+      <div class="row bg-primary p-4">
+         <div class="col-12 col-md-6 order-md-1">
+            <div class="card py-3"></div>
+         </div>
+         <div class="col-12 col-md-6">
+            <div class="py-3"></div>
+         </div>
+      </div>
+      <!-- Linked Page Summary -->
+      <div class="row">
+         <div class="col col-md-4 bg-white p-4 text-center">
+            <img class="img" src="http://via.placeholder.com/200x400" alt="">
+         </div>
+         <div class="col col-md-8 bg-dark p-4 text-light">
+            <div class="d-flex flex-column">
+               <h2>
+                  <i class="fa fa-shield" aria-hidden="true"></i>
+                  Title Text
+               </h2>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur quo laborum assumenda. Vero, odio
+                  ab culpa inventore nulla incidunt ullam dignissimos quidem adipisci quis magnam iste nisi deleniti?
+                  Quo?
+               </p>
+               <button type="button" class="btn btn-primary align-self-end">Click me!</button>
+            </div>
+         </div>
+      </div>
+      <div class="row"></div>
+      <div class="row"></div>
+      <div class="row"></div>
    </main>
 
    <!-- #region BootStrap 4 JavaScript -->
