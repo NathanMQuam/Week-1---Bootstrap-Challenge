@@ -17,3 +17,9 @@ main{flex-grow: 1;}
    width: .75rem !important;
    height: 100% !important;
 }
+.bg-image-lg {
+   background-image: url(https://picsum.photos/1920/1080);
+   background-position:right;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
