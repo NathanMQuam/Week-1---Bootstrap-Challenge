@@ -11,7 +11,7 @@ main{flex-grow: 1;}
    z-index: 1;
 }
 .shadow-filter {
-   filter: drop-shadow(0 .75rem 1rem rgba(0,0,0,.5));
+   filter: drop-shadow(.1rem .15rem .25rem rgba(0,0,0,.9));
 }
 .left-border {
    width: .75rem !important;

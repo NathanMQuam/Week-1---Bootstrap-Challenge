@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
 
-<!-- #region Requirements -->
-<!-- 
+<!-- Requirements
+
       Done: The page utilizes the Bootstrap Grid system to maintain a proper architecture
       Done: Appropriate use of HTML5 Semantic tags for the header, main and footer
       Done: On mobile any elements sharing a row should stack
@@ -14,10 +14,15 @@
          Done: The Card spills out of the row on medium and larger screens
          Done: Must use external Icon library (FontAwesome, Material Icons, etc.)
          Done: Specified elements order changes based on screen size
-         TODO: Cards are vertically centered with the center card larger for emphasis
-         Done? TODO: Appropriate use of Margins and padding
+         Done: Cards are vertically centered with the center card larger for emphasis
+         Done: Appropriate use of Margins and padding
     -->
-<!-- #endregion -->
+<!-- Stretch Goals
+   
+   TODO: Add some CSS Animations to the page
+   TODO: Utilize scroll to in page navigation
+   TODO: Swap one of your images for a <video>
+-->
 
 <head>
    <title>Week 1 - Challenge Site</title>
@@ -75,8 +80,8 @@
                   </div>
                </div>
                <div class="form-group">
-                  <label for="formControlTextarea1">Message</label>
-                  <textarea class="form-control" id="formControlTextarea1" rows="3" required></textarea>
+                  <br>
+                  <textarea class="form-control" id="formControlTextarea1" rows="3" placeholder="Message" required></textarea>
                </div>
                <div class="form-group form-check">
                   <input type="checkbox" class="form-check-input" id="check1">
@@ -88,7 +93,7 @@
          <div class="col offset-1 d-none d-md-block shadow-filter">
             <div class="d-flex h-100">
                <div class="left-border bg-primary"></div>
-               <div class="pl-3">
+               <div class="pl-3 text-light">
                   <h3>Lorsum Iprem</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos inventore accusantium voluptas
                      voluptatum.</p>
@@ -119,7 +124,7 @@
             </div>
          </div>
          <div class="col-12 col-md-6">
-            <div class="p-3">
+            <div class="p-3 text-light">
                <h3>Lorem Ipsum?</h3>
                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolores, unde inventore nam fuga
@@ -130,14 +135,14 @@
          </div>
       </div>
       <!-- Linked Page Summary Row -->
-      <div class="row">
-         <div class="col-12 col-md-4 bg-white p-4 text-center">
-            <img class="mw-100 mh-100" src="http://via.placeholder.com/200x400" alt="">
+      <div class="row bg-light text-dark">
+         <div class="col-12 col-md-4 p-4 text-center">
+            <img class="mw-100 mh-100" src="https://picsum.photos/400/600" alt="">
          </div>
-         <div class="col-12 col-md-8 bg-dark p-4 text-light">
+         <div class="col-12 col-md-8 p-4">
             <div class="d-flex flex-column h-100 justify-content-center">
                <h2>
-                  <i class="fa fa-shield" aria-hidden="true"></i>
+                  <i class="fa fa-shield text-primary" aria-hidden="true"></i>
                   Title Text
                </h2>
                <p>
@@ -178,7 +183,7 @@
    </main>
    <!-- Footer -->
    <footer class="container-fluid">
-      <div class="row bg-primary">
+      <div class="row bg-primary text-light">
          <div class="col">
             <p>
             <h3>Lorem ipsum?</h3>
