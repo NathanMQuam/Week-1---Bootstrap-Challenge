@@ -10,3 +10,10 @@ main{flex-grow: 1;}
    margin-bottom: -4em;
    z-index: 1;
 }
+.shadow-filter {
+   filter: drop-shadow(0 .5rem 1rem rgba(0,0,0,.15));
+}
+.left-border {
+   width: .75rem !important;
+   height: 100% !important;
+}
