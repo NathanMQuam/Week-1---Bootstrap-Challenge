@@ -1,2 +1,12 @@
 body { min-height: 100vh; display: flex; flex-direction: column; }
 main{flex-grow: 1;}
+
+
+
+.cinzel {
+   font-family: 'Cinzel', serif;
+}
+.card-overflow {
+   margin-bottom: -4em;
+   z-index: 1;
+}

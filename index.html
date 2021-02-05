@@ -2,16 +2,16 @@
 <html lang="en">
 
 <!-- #region Requirements -->
-   <!-- 
+<!-- 
       Done: The page utilizes the Bootstrap Grid system to maintain a proper architecture
       Done: Appropriate use of HTML5 Semantic tags for the header, main and footer
       Done: On mobile any elements sharing a row should stack
-      TODO: Utilizes custom font on at least one element
+      Done: Utilizes custom font on at least one element
 
       The following must adhere to the mock
          Done: Sticky Navbar on scroll
          Done: The Text Over Image is hidden on mobile (@media Rule)
-         TODO: The Card spills out of the row on medium and larger screens
+         Done: The Card spills out of the row on medium and larger screens
          Done: Must use external Icon library (FontAwesome, Material Icons, etc.)
          Done: Specified elements order changes based on screen size
          TODO: Cards are vertically centered with the center card larger for emphasis
@@ -30,14 +30,22 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <!-- Font Awesome -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- RPG Awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css"
       integrity="sha512-01mG/8rtthZxcE/oLY/1aVBq0UHYxd3r9MgSi33zFQ190gj+BfHY8XeoFiErGyVt1pE68U6InjMq+xkVTSf6yg=="
       crossorigin="anonymous" />
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+
    <link rel="stylesheet" href="style.css">
 </head>
 
+
+
 <body class="bg-light text-dark">
-   <header class="sticky-top container-fluid bg-primary text-light">
+   <header class="sticky-top container-fluid bg-primary text-light cinzel">
       <div class="row">
          <div class="col d-flex align-items-center">
             <i class="ra ra-wyvern ra-5x p-2" aria-hidden="true"></i>
@@ -59,10 +67,34 @@
       <!-- Overflow Card Row -->
       <div class="row bg-primary p-4">
          <div class="col-12 col-md-6 order-md-1">
-            <div class="card py-3"></div>
+            <div class="card p-3 card-overflow">
+               <p>
+                  <i class="ra ra-fizzing-flask ra-2x align-middle" aria-hidden="true"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque nesciunt illum fugiat nihil.
+               </p>
+               <p>
+                  <i class="ra ra-jigsaw-piece ra-2x align-middle" aria-hidden="true"></i>
+                  Lorem Jiggy dolor sit amet consectetur adipisicing elit. Sunt atque nesciunt illum fugiat nihil.
+               </p>
+               <p>
+                  <i class="ra ra-rune-stone ra-2x align-middle" aria-hidden="true"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque nesciunt illum fugiat nihil.
+               </p>
+               <p>
+                  <i class="ra ra-stopwatch ra-2x align-middle" aria-hidden="true"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque nesciunt illum fugiat nihil.
+               </p>
+            </div>
          </div>
          <div class="col-12 col-md-6">
-            <div class="py-3"></div>
+            <div class="p-3">
+               <h3>Lorem Ipsum?</h3>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolores, unde inventore nam fuga
+                  doloremque excepturi corporis perferendis aliquid, eius sit culpa alias fugiat, maiores dolore iure.
+                  Distinctio, quo quos!
+               </p>
+            </div>
          </div>
       </div>
       <!-- Linked Page Summary Row -->
@@ -71,7 +103,7 @@
             <img class="mw-100 mh-100" src="http://via.placeholder.com/200x400" alt="">
          </div>
          <div class="col-12 col-md-8 bg-dark p-4 text-light">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column h-100 justify-content-center">
                <h2>
                   <i class="fa fa-shield" aria-hidden="true"></i>
                   Title Text
@@ -108,8 +140,12 @@
    <footer class="container-fluid">
       <div class="row bg-primary">
          <div class="col">
-            <p><h3>Lorem ipsum?</h3></p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nobis aliquid animi eius aperiam eos non libero accusantium delectus deleniti magnam pariatur quis, tempora atque earum laboriosam molestiae id ea.</p>
+            <p>
+            <h3>Lorem ipsum?</h3>
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nobis aliquid animi eius aperiam eos non
+               libero accusantium delectus deleniti magnam pariatur quis, tempora atque earum laboriosam molestiae id
+               ea.</p>
          </div>
       </div>
       <div class="row text-primary">
@@ -118,6 +154,8 @@
          </div>
       </div>
    </footer>
+
+
 
    <!-- #region BootStrap 4 JavaScript -->
    <!-- Optional JavaScript -->
